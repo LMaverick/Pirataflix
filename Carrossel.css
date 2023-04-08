@@ -116,9 +116,7 @@ width: calc(100% / 3);
 
   }
 
-  #videoLan{
-    min-width: 400px;
-  }
+
 }
 
 @media screen  and (max-width: 550px){
@@ -127,9 +125,7 @@ width: calc(100% / 3);
 
   }
 
-  #videoLan{
-    min-width: 200px;
-  }
+  
 }
 
 
@@ -152,30 +148,44 @@ width: calc(100% / 3);
   grid-area: titulo;
 
   font-family: 'Bebas Neue', cursive, sans-serif;
-  font-size: 3em;
+  font-size: 8em;
+  text-align: center;
   color: #080808;
+
+  padding-top: 100px;
+  margin:0;
 }
 
 #categoriaLan{
   grid-area: cat;
 
   font-family: 'Delicious Handrawn', cursive, sans-serif;
-  font-size: 1.4em;
-  color: #080808;
-
+  font-size: 2.0em;
+  text-align: center;
+  color: #572209;
+  margin:0;
+  margin-top: -50px;
 }
 
 #sinopseLan{
   grid-area: sinopse;
+
+  font-family: sans-serif;
+  font-size: 1.4em;
+  text-align: justify;
+  color: #080808;
+
+  margin:0;
 }
 
 #videoLan{
   grid-area: video;
 
-  background-color: #080808;
+  background-color: #9e7631;
   margin: 10px;
   padding: 20px;
   min-width: 600px;
+ 
   
   
    padding-bottom: 50%;
@@ -184,8 +194,60 @@ width: calc(100% / 3);
 
 #videoLan > iframe{
   position: absolute;
-  top: 1%;
-  left: 1%;
-  height: 100%;
-  width: 90%;
+  top: 2%;
+  left: 2%;
+  height: 96%;
+  width: 96%;
+}
+
+
+@media (max-width: 952px){
+  .lancamento{
+    grid-template-areas: 'titulo  titulo '
+    'cat cat'
+    'sinopse sinopse'
+    'video video';
+  }
+
+  #tituloLan{
+  
+    font-size: 3em;
+    
+  }
+  
+  #categoriaLan{
+    grid-area: cat;
+  
+    font-family: 'Delicious Handrawn', cursive, sans-serif;
+    font-size: 1.4em;
+    color: #080808;
+  
+  }
+  
+  #sinopseLan{
+    grid-area: sinopse;
+  }
+  
+  #videoLan{
+    grid-area: video;
+  
+    background-color: #9e7631;
+    margin: 10px;
+    padding: 20px;
+    min-width: 600px;
+   
+    
+    
+     padding-bottom: 50%;
+     position: relative;
+  }
+  
+  #videoLan > iframe{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    height: 96%;
+    width: 96%;
+  }
+
 }
