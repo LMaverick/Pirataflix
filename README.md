@@ -1,6 +1,9 @@
 # Pirataflix
  Trabalho da faculdade de ADS 2023.
 
+ [Veja clicando aqui](https://lmaverick.github.io/Pirataflix/)
+
+
 
  Integrantes:
 
