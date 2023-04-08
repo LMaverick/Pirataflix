@@ -19,13 +19,33 @@ font-family: 'Delicious Handrawn', cursive;
 
 }
 
+.catFilmes {
+  display: flex;
+  padding-top: 20px;
+  padding-left:80px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+
+
+  align-items: stretch;
+  justify-content: space-between;
+  height: 10px;
+  background-color: #080808;
+
+}
+
+.catFilmes h2 {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 2em;
+  color: #fff;
+}
  /* ================  Carrossel dos filmes ===================*/
 .flexCar{
   display: flex;
-  padding: 0 35px;
-  align-items: center;
+  padding: 10px 35px;
+  align-items: top ;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #080808;
 }
 

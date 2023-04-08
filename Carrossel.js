@@ -1,8 +1,21 @@
-const  carrossel = document.querySelector(".carrossel");
+const  carrossel = document.querySelector(".carrossel"),
+firstImg  = carrossel.querySelector("img")[0];
+setas = document.querySelectorAll(".carrossel i"); 
+
+let firstImgWidth = firstImg.clientWidth +  14;
+
+setas.forEach(icon => {
+    icon.addEventListener("click",  () => {
+        carrossel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth; 
+    });
+    
+});
+
+
 
 let isDragStart = false, prevPageX,  prevScrollLeft;
 
-const dragStart = (e) => {
+const dragStart = (e) => {   
 
     isDragStart = true;
     prevPageX = e.pageX;
