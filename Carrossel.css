@@ -23,7 +23,7 @@ font-family: 'Delicious Handrawn', cursive;
   display: flex;
   padding-top: 20px;
   padding-left:80px;
-  padding-right: 20px;
+  padding-right: 100px;
   padding-bottom: 60px;
 
 
@@ -35,9 +35,15 @@ font-family: 'Delicious Handrawn', cursive;
 }
 
 .catFilmes h2 {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: 'Delicious Handrawn', cursive, sans-serif;
   font-size: 2em;
   color: #fff;
+}
+
+#bat  {
+  width: 100px;
+  height: 50px;
+
 }
  /* ================  Carrossel dos filmes ===================*/
 .flexCar{
@@ -102,11 +108,16 @@ width: calc(100% / 3);
    
 }
 
-/* ==================== Responsividade======================*/
+/* ==================== Responsividade  carrossel  ======================*/
 @media screen  and (max-width: 900px){
   .carSlide  img{
     width: calc(100% / 2);
 
+
+  }
+
+  #videoLan{
+    min-width: 400px;
   }
 }
 
@@ -115,4 +126,66 @@ width: calc(100% / 3);
     width: 100%;
 
   }
+
+  #videoLan{
+    min-width: 200px;
+  }
+}
+
+
+/* ========================= Lançamentos ======================================== */
+
+.lancamento{
+  display: grid;
+  grid-template-areas: 'titulo  video '
+                       'cat video'
+                       'sinopse video';
+  
+  background-color: #BF8D39;
+  padding: 50px 100px;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+#tituloLan{
+  grid-area: titulo;
+
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 3em;
+  color: #080808;
+}
+
+#categoriaLan{
+  grid-area: cat;
+
+  font-family: 'Delicious Handrawn', cursive, sans-serif;
+  font-size: 1.4em;
+  color: #080808;
+
+}
+
+#sinopseLan{
+  grid-area: sinopse;
+}
+
+#videoLan{
+  grid-area: video;
+
+  background-color: #080808;
+  margin: 10px;
+  padding: 20px;
+  min-width: 600px;
+  
+  
+   padding-bottom: 50%;
+   position: relative;
+}
+
+#videoLan > iframe{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 100%;
+  width: 90%;
 }
