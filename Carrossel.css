@@ -16,5 +16,83 @@ font-family: 'Delicious Handrawn', cursive;
   padding:0;
   box-sizing: border-box;
   font-family: sans-serif;
-  
+
+}
+
+ /* ================  Carrossel dos filmes ===================*/
+.flexCar{
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #080808;
+}
+
+.carrossel{
+max-width: 1200px;
+position: relative;
+}
+
+.carrossel  i{
+  height: 46px ;
+  width: 46px;
+  font-size: 1.8em;
+
+  position: absolute;
+
+  cursor: pointer;
+  text-align: center;
+  line-height: 46px;
+  background: #fff;
+  border-radius:  50%;
+
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.carrossel  i:first-child{
+  left: -23px;
+}
+
+.carrossel  i:last-child{
+  right: -23px;
+}
+
+
+.carrossel .carSlide{
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.carSlide img{
+width: 300px;
+object-fit: cover;
+margin-left: 14px;
+height: calc(100% / 3);
+
+
+}
+
+.carSlide img:first-child{
+  margin-left: 0;
+   
+}
+
+/* ==================== Responsividade======================*/
+@media screen  and (max-width: 900px){
+  .carSlide  img{
+    width: 200px;
+
+  }
+}
+
+@media screen  and (max-width: 550px){
+  .carSlide  img{
+    width: 100px;
+
+  }
 }
