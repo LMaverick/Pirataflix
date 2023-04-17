@@ -7,7 +7,7 @@ function logar(){
     //aqui estou passando o nome é a senha do usuario se for este ele aceita se não da erro, usuario criado manualmete
     if( login == "teste@projeto.com" && senha == "projeto"){
         console.log('Bem-Vindo');
-        location.href = "piraflexIn.html"; // location.href ele vai carrega o arquivo que estiver ai dentro
+        location.href = "piraflexln.html"; // location.href ele vai carrega o arquivo que estiver ai dentro
     } else{
         alert('Usuario ou senha não encontrados');
         
