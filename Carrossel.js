@@ -1,42 +1,24 @@
-const  carrossel = document.querySelector(".carrossel"),
-firstImg  = carrossel.querySelector("img")[0];
-setas = document.querySelectorAll(".carrossel i"); 
+const movie1 = document.getElementById('movie1');
+const movie2 = document.getElementById('movie2');
 
-let firstImgWidth = firstImg.clientWidth +  14;
+const info1 = document.getElementById('info1');
+const info2 = document.getElementById('info2');
 
-setas.forEach(icon => {
-    icon.addEventListener("click",  () => {
-        carrossel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth; 
-    });
-    
+const close1 = document.getElementById('close1');
+const close2 = document.getElementById('close2');
+
+movie1.addEventListener('click', () => {
+	info1.classList.toggle('show');
 });
 
+movie2.addEventListener('click', () => {
+	info2.classList.toggle('show');
+});
 
+close1.addEventListener('click', () => {
+info1.classList.remove('show');
+});
 
-let isDragStart = false, prevPageX,  prevScrollLeft;
-
-const dragStart = (e) => {   
-
-    isDragStart = true;
-    prevPageX = e.pageX;
-    prevScrollLeft= carrossel.scrollLeft;
-}
-
-const dragging = (e) => {
-    if (!isDragStart) return;
-    e.preventDefault();
-    let positionDiff =  e.pageX - prevPageX;
-    carrossel.scrollLeft = prevScrollLeft - positionDiff;
-
-}
-
-const dragStop = () => {
-
-    isDragStart = false;
-}
-
-
-carrossel.addEventListener("mousedown",  dragStart);
-carrossel.addEventListener("mousemove",  dragging);
-carrossel.addEventListener("mouseup",  dragStop);
-
+close2.addEventListener('click', () => {
+info2.classList.remove('show');
+});
