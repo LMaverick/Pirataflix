@@ -111,10 +111,17 @@ font-family: 'Delicious Handrawn', cursive;
   height: 90%;
   padding: 20px;
   background-color: #080808;
+  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   display: none;
   z-index: 1000;
+
+  background-image: url(imgs/logo.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .show {
