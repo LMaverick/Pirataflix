@@ -4,15 +4,13 @@ body{
 	font-weight: 300;
 	line-height: 1.7;
 	color: #ffeba7;
-
+  background: linear-gradient(20deg, #1A120B, #3C2A21, #D5CEA3, #E5E5CB);
+  background-size: 200% 900%;
+ 
+  animation: colors 15s ease infinite;
  
 }
-.mando{
-  background: linear-gradient(20deg, #1A120B, #3C2A21, #D5CEA3, #E5E5CB);
-  background-size: 300% 300%;
-  height: 968px;
-  animation: colors 15s ease infinite;
-}
+
 @keyframes colors {
   0% {
     background-position: 0% 50%;
@@ -50,9 +48,10 @@ h6 span{
   color: #ffeba7;
   font-family: 'Special Elite',monospace;
   font-size: 3em;
-  text-align: center;
+  
   margin: 0 auto;
- 
+  margin-top: 323px;
+  margin-left: 46px;
 }
 .section{
   position: relative;
@@ -123,7 +122,7 @@ display: none;
   width: 100%;
   height: 100%;
   background-color: #2b2e38;
- 
+  margin-left: 10px;
   position: absolute;
   border-radius: 6px;
  
@@ -219,7 +218,7 @@ display: none;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  margin-left: 855px;
+  margin-left: 755px;
   margin-top: 274px;
 
 }
@@ -231,8 +230,8 @@ display: none;
   height: 50px;
   background-color: rgb(165, 26, 26);
   position: absolute;
-  left: 817px;
-  top: 373px;
+  left: 747px;
+  top: 293px;
  
 }
 .linn{
@@ -244,28 +243,16 @@ display: none;
   margin: 0 auto;
   white-space: nowrap;
   position: relative;
-  top: -19px;
-}
-.lin{
+  top: -20px;
   
-  border-left: 2px solid transparent;
-  color: #ffeba7;
-  font-family: 'Special Elite',monospace;
-  font-size: 3em;
-  text-align: center;
-  margin: 0 auto;
-  white-space: nowrap;
-  left: -115px;
- position: relative;
- top: 355px;
- overflow: hidden;
 }
+
 .typ{
   animation: cursor 890ms steps(40) 6  normal  both;
 }
 .type-animation{
   animation: blinkCursor 1900ms steps(40)  normal , 
-  typing 5s steps(40) 6.5s normal both; /*o primeiro e os minutos ou segundo o segundo é o delei*/
+  typing 5s steps(40) 6.5s normal both;/*o primeiro e os minutos ou segundo o segundo é o delei*/
 }
 @keyframes cursor{
   from{
@@ -361,7 +348,7 @@ background-color: transparent;
   height: 100%;
   background-color: #2b2e38;
   left: 1px;
-  position: absolute;
+position: relative;
   border-radius: 6px;
   -webkit-transform-style: preserve-3d;
 }
