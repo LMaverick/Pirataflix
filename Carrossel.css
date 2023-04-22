@@ -82,10 +82,6 @@ body{
   background-color: #080808;
 }
 
-
-
-
-
 .carrossel{
   display: flex;
   height:20rem;
@@ -108,7 +104,21 @@ body{
 }
 .filmeExibi:hover{
   flex:5;
+  border-radius: 2px;
 
+  outline: 3px solid #BF8D39;
+  outline-offset: 2px;
+  animation: selecao 0.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes selecao {
+  from {
+    outline-offset: -1px;
+  }
+  to {
+    outline-offset: 5px;
+  }
 }
 
 #espaco{background-color: #080808;padding-bottom: 50px;}
@@ -128,8 +138,7 @@ body{
 
 .info {
   position: fixed;
-  top: 55%;
-  left: 50%;
+
   transform: translate(-50%, -50%);
   width: 95%;
   max-width: 1300px;
@@ -149,7 +158,26 @@ body{
   background-position-x: center;
   background-size: cover;
   background-blend-mode: overlay;
+
+  bottom: -100px;
+  right: 20px;
+  opacity: 0;
+  animation: surgir 0.7s forwards;
 }
+
+@keyframes surgir {
+  from {
+   top: 100%;
+    left: 50%;
+    opacity: 0;
+  }
+  to {
+   top: 55%;
+  left: 50%;
+    opacity: 1;
+  }
+}
+
 
 .show {
   display: block;
@@ -194,6 +222,11 @@ body{
 }
 
 
+.close-btn:hover {
+  outline: 2px solid #BF8D39;
+  outline-offset: 2px;
+  animation: selecao 0.5s ease-in-out infinite alternate;}
+
 .close-btn {
   display: block;
   background-color: #BF8D39;
@@ -208,6 +241,9 @@ body{
   border-radius: 1px;
   cursor: pointer;
   margin: 10px;
+  
+
+  
 }
 
 
