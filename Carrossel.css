@@ -191,8 +191,51 @@ body{
 
   display: block;
   margin: 0 auto;
+  position: relative;
+
+  animation: videoSai 0.4s forwards;
+  animation-direction: alternate;
+
+ 
+  outline: 2px solid #BF8D39;
+  outline-offset: 2px;
+}
+
+.imgInfo:hover{ 
+  
+  animation: videoAparece 0.4s forwards;
+ 
 
 }
+
+
+@keyframes videoAparece {
+  from {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    
+  }
+  to {
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+    
+    
+  }
+  
+}
+@keyframes videoSai {
+  from {
+    width: 89%;
+    height: auto;
+  }
+  to {
+    width: 50%;
+    height: auto;
+  }
+}
+
 
 .tituloInfo{
   font-family: 'Delicious Handrawn', cursive, sans-serif;
@@ -222,10 +265,6 @@ body{
 }
 
 
-.close-btn:hover {
-  outline: 2px solid #BF8D39;
-  outline-offset: 2px;
-  animation: selecao 0.5s ease-in-out infinite alternate;}
 
 .close-btn {
   display: block;
@@ -246,6 +285,12 @@ body{
   
 }
 
+
+.close-btn:hover {
+  outline: 2px solid #BF8D39;
+  outline-offset: 2px;
+  animation: selecao 0.5s ease-in-out infinite alternate;
+}
 
 /* ==================== Responsividade  carrossel  ======================*/
 @media screen  and (max-width: 900px){
