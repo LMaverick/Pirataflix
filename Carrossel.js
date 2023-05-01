@@ -68,3 +68,24 @@ info5.classList.remove('show');
 
 //=========================================================
 //=========================================================
+
+function abrirVideo() {
+	var videoContainer = document.getElementById("videoContainer");
+	videoContainer.innerHTML = `
+	  <video id="video" controls autoplay width="100%" height="100%">
+		<source src="imgs/video.mp4" type="video/mp4 ">
+	  </video>
+	`;
+	var video = document.getElementById("video");
+	video.addEventListener("ended", fecharVideo);
+	videoContainer.style.display = "block";
+  }
+  
+  function fecharVideo() {
+	var videoContainer = document.getElementById("videoContainer");
+	var video = document.getElementById("video");
+	videoContainer.style.display = "none";
+	video.pause();
+	video.currentTime = 0;
+  }
+  

@@ -272,14 +272,16 @@ body{
 
 .lancamento{
   display: grid;
-  grid-template-areas: 'titulo  video '
-                       'cat video'
-                       'sinopse video';
+  grid-template-areas: 'titulo  titulo '
+                       'cat cat'
+                       'sinopse sinopse'
+                       'video video'
+                       'video video';
   
   background-color: #BF8D39;
   padding: 50px 100px;
 
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -287,11 +289,11 @@ body{
   grid-area: titulo;
 
   font-family: 'Bebas Neue', cursive, sans-serif;
-  font-size: 8em;
+  font-size: 10em;
   text-align: center;
   color: #080808;
 
-  padding-top: 100px;
+  padding-top: 0;
   margin:0;
 }
 
@@ -303,7 +305,7 @@ body{
   text-align: center;
   color: #572209;
   margin:0;
-  margin-top: -50px;
+  padding: 0;
 }
 
 #sinopseLan{
@@ -323,7 +325,7 @@ body{
   background-color: #9e7631;
   margin: 10px;
   padding: 20px;
-  min-width: 600px;
+  min-width: 300px;
  
   
   
@@ -389,4 +391,17 @@ body{
     width: 96%;
   }
 
+}
+
+/* ======================================================================================================================= */
+
+#videoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: none;
+  z-index: 9999;
 }
