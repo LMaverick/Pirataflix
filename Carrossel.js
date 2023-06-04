@@ -161,84 +161,84 @@ movie1.addEventListener('click', () => {
   
 
 //=========================================================
-movie1.addEventListener('click', () => {
-	info1.classList.toggle('show');
+close1.addEventListener('click', () => {
+	info1.classList.remove('show');
   });
   
-  movie2.addEventListener('click', () => {
-	info2.classList.toggle('show');
+  close2.addEventListener('click', () => {
+	info2.classList.remove('show');
   });
   
-  movie3.addEventListener('click', () => {
-	info3.classList.toggle('show');
+  close3.addEventListener('click', () => {
+	info3.classList.remove('show');
   });
   
-  movie4.addEventListener('click', () => {
-	info4.classList.toggle('show');
+  close4.addEventListener('click', () => {
+	info4.classList.remove('show');
   });
   
-  movie5.addEventListener('click', () => {
-	info5.classList.toggle('show');
+  close5.addEventListener('click', () => {
+	info5.classList.remove('show');
   });
   
-  movie6.addEventListener('click', () => {
-	info6.classList.toggle('show');
+  close6.addEventListener('click', () => {
+	info6.classList.remove('show');
   });
   
-  movie7.addEventListener('click', () => {
-	info7.classList.toggle('show');
+  close7.addEventListener('click', () => {
+	info7.classList.remove('show');
   });
   
-  movie8.addEventListener('click', () => {
-	info8.classList.toggle('show');
+  close8.addEventListener('click', () => {
+	info8.classList.remove('show');
   });
   
-  movie9.addEventListener('click', () => {
-	info9.classList.toggle('show');
+  close9.addEventListener('click', () => {
+	info9.classList.remove('show');
   });
   
-  movie10.addEventListener('click', () => {
-	info10.classList.toggle('show');
+  close10.addEventListener('click', () => {
+	info10.classList.remove('show');
   });
   
-  movie11.addEventListener('click', () => {
-	info11.classList.toggle('show');
+  close11.addEventListener('click', () => {
+	info11.classList.remove('show');
   });
   
-  movie12.addEventListener('click', () => {
-	info12.classList.toggle('show');
+  close12.addEventListener('click', () => {
+	info12.classList.remove('show');
   });
   
-  movie13.addEventListener('click', () => {
-	info13.classList.toggle('show');
+  close13.addEventListener('click', () => {
+	info13.classList.remove('show');
   });
   
-  movie14.addEventListener('click', () => {
-	info14.classList.toggle('show');
+  close14.addEventListener('click', () => {
+	info14.classList.remove('show');
   });
   
-  movie15.addEventListener('click', () => {
-	info15.classList.toggle('show');
+  close15.addEventListener('click', () => {
+	info15.classList.remove('show');
   });
   
-  movie16.addEventListener('click', () => {
-	info16.classList.toggle('show');
+  close16.addEventListener('click', () => {
+	info16.classList.remove('show');
   });
   
-  movie17.addEventListener('click', () => {
-	info17.classList.toggle('show');
+  close17.addEventListener('click', () => {
+	info17.classList.remove('show');
   });
   
-  movie18.addEventListener('click', () => {
-	info18.classList.toggle('show');
+  close18.addEventListener('click', () => {
+	info18.classList.remove('show');
   });
   
-  movie19.addEventListener('click', () => {
-	info19.classList.toggle('show');
+  close19.addEventListener('click', () => {
+	info19.classList.remove('show');
   });
   
-  movie20.addEventListener('click', () => {
-	info20.classList.toggle('show');
+  close20.addEventListener('click', () => {
+	info20.classList.remove('show');
   });
   
 
