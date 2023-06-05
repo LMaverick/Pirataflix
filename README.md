@@ -3,9 +3,12 @@
 
  [Veja clicando aqui](https://lmaverick.github.io/Pirataflix/)
 
+# -== LOGIN PROJETO ==-
+Login: teste@projeto.com 
+Senha: projeto
 
-
- Integrantes:
+========================
+# Integrantes:
 
  Midian Karen Oliveira Neri RA: 923106600
 

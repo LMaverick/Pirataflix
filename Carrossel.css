@@ -78,6 +78,18 @@ body{
 
 }
 
+#hahaha  {
+  width: 60px;
+  height: 60px;
+
+}
+
+#animacao  {
+  width: 60px;
+  height: 50px;
+
+}
+
  /* ================  Carrossel dos filmes ===================*/
 .flexCar{
   display: flex;
