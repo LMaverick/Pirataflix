@@ -1,28 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
 body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	line-height: 1.7;
 	color: #ffeba7;
-  background: linear-gradient(20deg, #1A120B, #3C2A21, #D5CEA3, #E5E5CB);
-  background-size: 200% 900%;
- 
-  animation: colors 15s ease infinite;
- 
-}
-
-@keyframes colors {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100%{
-    background-position: 0% 50%;
-  }
+	background-color: #1f2029;
 }
 a:hover {
 	text-decoration: none;
@@ -43,15 +25,6 @@ h4 {
 h6 span{
   padding: 0 20px;
   font-weight: 700;
-}
-.piraflex{
-  color: #ffeba7;
-  font-family: 'Special Elite',monospace;
-  font-size: 3em;
-  
-  margin: 0 auto;
-  margin-top: 323px;
-  margin-left: 46px;
 }
 .section{
   position: relative;
@@ -122,10 +95,9 @@ display: none;
   width: 100%;
   height: 100%;
   background-color: #2b2e38;
-  margin-left: 10px;
+
   position: absolute;
   border-radius: 6px;
- 
   -webkit-transform-style: preserve-3d;
 }
 .card-back {
@@ -208,147 +180,20 @@ display: none;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 
-.line{
-  display: flex;
-  border-left: 2px solid transparent;
-  color: #ffeba7;
-  font-family: 'Special Elite',monospace;
-  font-size: 3em;
-  text-align: center;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-left: 755px;
-  margin-top: 274px;
-
-}
-.quadrado{
- 
-  border: 1px solid transparent;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(165, 26, 26);
-  position: absolute;
-  left: 747px;
-  top: 293px;
- 
-}
-.linn{
- 
-  color: #ffeba7;
-  font-family: 'Special Elite',monospace;
-  font-size: 3em;
-  text-align: center;
-  margin: 0 auto;
-  white-space: nowrap;
-  position: relative;
-  top: -20px;
-  
-}
-
-.typ{
-  animation: cursor 890ms steps(40) 6  normal  both;
-}
-.type-animation{
-  animation: blinkCursor 1900ms steps(40)  normal , 
-  typing 5s steps(40) 6.5s normal both;/*o primeiro e os minutos ou segundo o segundo é o delei*/
-}
-@keyframes cursor{
-  from{
-      color: #ffeba7;
-       
-  }
-  to{
-   
-    
-      color: transparent;
-      visibility: hidden;
-  }
-}
-
-@keyframes typing{
-  from{
-      width: 0;
-      text-shadow: 2px 2px 10px transparent;
-  }
-  to{
-      width: 6em;
-      text-shadow: 2px 2px 10px white;
-      visibility: hidden;
-      
-  }
-}
-.ttyping-anima{
-animation: ttyping  1700ms  steps(40) 4.4s normal both;
-
-}
-@keyframes ttyping{
-from{
-width: 50px;
-  height: 50px;
-  background-color: darkgray;
-}
-to{
-width: 0;
-  height: 0;
-
-background-color: transparent;
-}
-}
-
-@keyframes blinkCursor{
-  from{
-      border-left-color: transparent;
-  }
-  to{
-      border-left-color: transparent;
-  }
-}
-.ttypin{
-  animation: ttypingg 10s steps(75) 12s normal both;
-  
-  }
-  @keyframes ttypingg{
-    from{
-      
-      
-
-      visibility: hidden;
-    }
-    to{
-    
-      visibility: visible;
-
-    }
-  }
-.container{
-  position: absolute;
-  top: -450px;
-  left: 300px;
-}
 #on{
-  position: absolute;
-  color: #FFFCF3;
-  right: 15px;
-  font-size: 22px;
-  margin-top: 15px;
-
-}
-#of{
-  position: absolute;
-  color: #FFFCF3;
-  right: 15px;
-  font-size: 22px;
-  margin-top: 15px;
-  display: none;
-}
-.pi{
-  width: 100%;
-  height: 100%;
-  background-color: #2b2e38;
-  left: 1px;
-position: relative;
-  border-radius: 6px;
-  -webkit-transform-style: preserve-3d;
-}
+    position: absolute;
+    color: #FFFCF3;
+    right: 15px;
+    font-size: 22px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  #of{
+    position: absolute;
+    color: #FFFCF3;
+    right: 15px;
+    font-size: 22px;
+    margin-top: 15px;
+    display: none;
+    cursor: pointer;
+  }
