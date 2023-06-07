@@ -1,33 +1,231 @@
 *{
-
-margin: 0;
-padding: 0;
-}
-body{
-background-color: #1f2029;
-}
-.usuario{
-border: 1px solid transparent;
-border-radius: 10px;
-width: 150px;
-height: 150px;
-margin: auto;
-padding: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-top: 300px;
-
-}
-h6{
-color: #ffeba7;
-text-align: center;
-font-size: 25px;
-position: relative;
-top: 320px;
-
-}
-a{
-text-decoration: none;
-}
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  #slider {
+    width: 100%;
+   max-width: 2000px;
+    height: 25vw;
+    max-height: 150px;
+    position: relative;
+    animation: ttypingg 10s steps(75) 12s normal both;
+  }
+  
+  #slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 966px;
+    object-fit: cover;
+  
+    transition: opacity 800ms;
+  }
+  
+  #slider img.selected { 
+    opacity: 1;
+  }
+  .usu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 40px;
+    left: 1px;
+    padding: 35px;
+    min-width: 200px;
+    animation: ttypingg 10s steps(75) 12s normal both;
+  }
+  .usuario{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: auto;
+    position: relative;
+    background-image: url(imgs/luffy.jpg);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h6{
+    color: #ffffffc2;
+    margin-left: 30px;
+    font-size: 20px;
+    position: relative;
+  }
+  a{
+    text-decoration: none;
+  }
+  .usuarioo{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: auto;
+    position: relative;
+    background-image: url(imgs/zoro.png);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .usuariooo{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: auto;
+    position: relative;
+    background-image: url(imgs/sanji.png);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .line{
+    display: flex;
+    align-items: center;
+    color: #ffeba7;
+    font-family: 'Special Elite',monospace;
+    font-size: 3em;
+    overflow: hidden;
+    position: absolute;
+    left: 28%;
+    top: 270px;
+    
+  }
+  .quadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(165, 26, 26);
+    position: absolute;
+    left: 50%;
+    top: 273px;
+   
+  }
+  .linn{
+    display: flex;
+    align-items: center;
+    color: #ffeba7;
+    font-family: 'Special Elite',monospace;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+   
+    
+  }
+  
+  .typ{
+    animation: cursor 890ms steps(40) 6  normal  both;
+  }
+  .type-animation{
+    animation: blinkCursor 1900ms steps(40)  normal , 
+    typing 5s steps(40) 6.5s normal both;/*o primeiro e os minutos ou segundo o segundo é o delei*/
+  }
+  @keyframes cursor{
+    from{
+        color: #ffeba7;
+         
+    }
+    to{
+     
+        
+        color: transparent;
+        display: none;
+    }
+  }
+  
+  @keyframes typing{
+    from{
+        width: 0;
+        text-shadow: 2px 2px 10px transparent;
+    }
+    to{
+        width: 6em;
+        text-shadow: 2px 2px 10px white;
+        visibility: hidden;
+        
+    }
+  }
+  .ttyping-anima{
+  animation: ttyping  1700ms  steps(40) 4.4s normal both;
+  
+  }
+  @keyframes ttyping{
+  from{
+  width: 50px;
+    height: 50px;
+    background-color: darkgray;
+  }
+  to{
+  width: 0;
+    height: 0;
+  
+  background-color: transparent;
+  }
+  }
+  
+  @keyframes blinkCursor{
+    from{
+        border-left-color: transparent;
+    }
+    to{
+        border-left-color: transparent;
+    }
+  }
+  
+    @keyframes ttypingg{
+      from{
+        
+        
+  
+        visibility: hidden;
+      }
+      to{
+      
+        visibility: visible;
+  
+      }
+    }
+    .titulo-principal{
+      left: 40%;
+      top: 270px;
+    position: absolute;
+      text-align: center;
+     
+      font-family:'Courier New', Courier, monospace;
+      color: #fff;
+  }
+  .titulo-principal:after{
+    
+   margin-left: 5px;
+   opacity: 1;
+   animation: pisca .7s infinite;
+  }
+  /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+  @keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+  }
